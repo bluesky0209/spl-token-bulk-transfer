@@ -1,5 +1,5 @@
 # spl-token-bulk-transfer(solana)
-
+This is js for transfering solana spl token using admin sign.
 ## Installation
 
 If you already installed `yarn', please skip this.
