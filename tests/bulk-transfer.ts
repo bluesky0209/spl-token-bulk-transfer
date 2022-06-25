@@ -23,7 +23,6 @@ async function bulkTransfer(tokenMintAddress: string, wallet: web.Keypair, to: s
     const dest = to[i];
     const destPublicKey = new web3.PublicKey(dest);
 
-    // const associatedDestinationTokenAccount = await mintToken.getOrCreateAssociatedAccountInfo(destPublicKey)
     const associatedDestinationTokenAddr = await Token.getAssociatedTokenAddress(
       mintToken.associatedProgramId,
       mintToken.programId,
